@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelHub - Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="">
+        <div class="menu container">
+            <a href="index.html"><img class="logo" src="./images/logo/Logo.png" alt="PixelHub"/></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="#" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="software.html">Software</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- formulario de contacto en html y css -->  
+
+	<div class="contact_form">
+	    <div class="formulario">			
+        <h1 class="form-title">Formulario de contacto</h1>
+            <form action="#" method="post">				
+				<p>
+				    <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+					<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+				</p>			
+                <p>
+				    <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+				</p>		
+				<p>
+				    <label for="telefone" class="colocar_telefono">Teléfono</label>
+					<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+				</p>		
+					<p>
+						<label for="asunto" class="colocar_asunto">Asunto
+							<span class="obligatorio">*</span>
+						</label>
+						<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+					</p>		
+							
+					<p>
+						<label for="mensaje" class="colocar_mensaje">Mensaje
+							<span class="obligatorio">*</span>
+						</label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>	  								
+							
+					<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+					<p class="aviso">
+					<span class="obligatorio"> * </span>los campos son obligatorios.
+				</p>					
+						
+			</form>
+		</div>	
+	</div>
+    
+    <footer class="footer container">
+        <div class="link">
+            <a href="index.html"><img class="logo" src="./images/logo/Logo.png" alt="PixelHub"/></a>
+        </div>
+    </footer>
+    <div class="foot">2023 PixelHub - Todos los derechos reservados</div>
+   <script src="index.js"></script>
+</body>
+</html>

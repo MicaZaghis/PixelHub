@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700;800;900&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1721;
+}
+
+img{ max-width: 100%;}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url(./images/logo/image-bg.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 0;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-right: 50px;
+    width: 15rem;
+}
+.menu .navbar ul li{ position: relative; float: left;}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+    display: block;
+}
+.menu .navbar ul li a:hover{ color: #FF5A2C;}
+#menu{ display: none;}
+.menu-icono{ width: 25px;}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{ display: flex;}
+.header-txt{ flex-basis: 50%;}
+.header-txt h1{
+    font-size: 60px;
+    color: white;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+.header-txt span{ color: #FF5A2C;}
+.header-txt p{
+    font-size: 17px;
+    color: #e0e0e0;
+    margin-bottom: 45px;
+}
+.butons{display: flex;}
+
+.btn-1, .btn-2, .btn-3{
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #FF5A2C;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: white;
+}
+.btn-1:hover{ background-color: #FF5A2C;}
+.popular{
+    padding: 50px 0;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+.popular-content{
+    display: flex; justify-content: space-between;
+}
+
+.popular-content img{width: 200px;}
+
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.product-1{ background-color: #2A223A;}
+.product-txt{padding: 50px 30px}
+
+.product-txt-2{padding: 0;}
+h3{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price p{
+    font-size: 17px; color: #FF5A2C;
+}
+.btn-2{
+    padding: 5px 25px;
+    background-color: #FF5A2C;
+    margin-right: 0;
+}
+.contact{ padding: 50px 300px;}
+.contact-content{
+    background-color: #2A223A;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+input{
+    padding: 18px 25px;
+    background-color: #3F3256;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: white;
+    font-size: 17px;
+}
+::placeholder{
+    color: #e0e0e0; 
+    font-size: 17px;
+}
+.btn-3{
+    background-color: #FF5A2C;
+    cursor: pointer;
+    margin-right: 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.link ul{display: flex;}
+.link ul li > a{
+    font-size: 17px;
+    color: white;
+    margin-right: 20px;
+}
+.link ul li > a:hover{
+    color:#FF5A2C
+}
+.foot {
+    display: flex;
+    justify-content: center;
+    color:black;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.3rem;
+    margin: 0;
+    background-color: #fdfdfd;
+    text-align: center;
+  }
+  textarea#subject {
+    height: 200px;
+    /* otros estilos para textarea */
+}
+
+.formulario input:focus{
+    display: flex;
+    flex-direction: column;
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+    display: flex;
+    flex-direction: column;
+	outline:0;
+	border: 1px solid #97d848;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column; /* Esto alinea los elementos del formulario verticalmente */
+    align-items: center; /* Esto centra los elementos en el eje cruzado, que ahora es horizontal */
+    margin-top: 20px;
+}
+
+.formulario input,
+.formulario textarea{
+    width: 100%; /* Hace que los inputs usen todo el ancho disponible */
+    margin-bottom: 20px; /* Añade espacio entre los elementos del formulario */
+}
+
+/* Asegúrate de que los estilos específicos de enfoque no alteren la disposición */
+.formulario input:focus,
+.formulario textarea:focus{
+    border: 1px solid #97d848;
+}
+
+/* Estilo para el botón */
+.formulario button#enviar{
+    cursor: pointer;
+    width: auto; /* o puedes especificar un ancho */
+    padding: 10px 20px; /* o cualquier otro padding que prefieras */
+}
+
+.form-title{
+    display: flex;
+    flex-direction: column; /* Esto alinea los elementos del formulario verticalmente */
+    align-items: center; /* Esto centra los elementos en el eje cruzado, que ahora es horizontal */
+    margin-top: 20px;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column; /* Esto alinea los elementos del formulario verticalmente */
+    align-items: center; /* Esto centra los elementos en el eje cruzado, que ahora es horizontal */
+    margin-top: 50px;
+    color: white;
+}
+.game-details {
+  color: white;
+  transform: translateY(50px);
+}
+
+
+.game-details img{
+    width: 300px;
+    background-color: #2A223A;
+    padding: 20px;
+  }
+
+  .game-details h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .game-details p{
+    display: flex;
+    position: relative;
+    left: 350px;
+    top: -249px;
+    max-width: 800px;
+    background-color: #2A223A;
+    padding: 30px;
+  }
+
+ 
